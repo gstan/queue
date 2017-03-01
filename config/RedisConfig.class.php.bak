@@ -1,0 +1,39 @@
+<?php
+/*========================================
+*   Copyright (C) 2016 All rights reserved.
+*   
+*   文件名称：Redis.php
+*   创 建 者：tanguoshuai
+*   创建日期：2016-12-15
+*   描    述：
+*
+============================================*/
+
+namespace Config;
+
+class RedisConfig {
+
+
+    const QUEUE_CONFIGUE_KEY = 'RedisConfig:queue_config_key';
+
+    const QUEUE_DATA_KEY = 'RedisConfig:queue_data_key';
+
+    public static $server = array(
+        'tc' => array(
+            array(
+                'ip' => '10.95.39.44',
+                'port' => '8001',
+            ),
+            array(
+                'ip' => '10.95.39.44',
+                'port' => '8001',
+            ),
+        ),
+        'nj' => array(
+            array(
+                'ip' => '10.95.39.44',
+                'port' => '8001',
+            ),
+        ),
+    );
+}
